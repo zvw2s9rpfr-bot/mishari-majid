@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quotes by Mishari</title>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #000;
+        margin: 0;
+        padding: 20px;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        color: gold;
+        margin-bottom: 25px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .section {
+        background: #111;
+        border: 1px solid gold;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .section:hover {
+        background: #222;
+        transform: scale(1.02);
+    }
+
+    .content {
+        display: none;
+        margin-top: 10px;
+        padding: 12px;
+        background: #191919;
+        border-left: 3px solid gold;
+        border-radius: 10px;
+        line-height: 1.7;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    .footer {
+        margin-top: 40px;
+        text-align: center;
+        color: gold;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Premium Quotes Collection</h1>
+
+<!-- 🔥 Love -->
+<div class="section" onclick="toggle('love')">❤️ Love Quotes</div>
+<div id="love" class="content"></div>
+
+<!-- 😢 Sad -->
+<div class="section" onclick="toggle('sad')">💔 Sad Quotes</div>
+<div id="sad" class="content"></div>
+
+<!-- 💀 Breakup -->
+<div class="section" onclick="toggle('break')">💀 Breakup Quotes</div>
+<div id="break" class="content"></div>
+
+<!-- 🦉 Wisdom -->
+<div class="section" onclick="toggle('wisdom')">🦉 Wisdom Quotes</div>
+<div id="wisdom" class="content"></div>
+
+<div class="footer">
+    Made by <b style="color:#FFD700;">Misharimajid</b> — 9yellow<br>
+    Support by <b>Sir Riaz</b>
+</div>
+
+<script>
+function toggle(id) {
+    let section = document.getElementById(id);
+    section.style.display = section.style.display === "block" ? "none" : "block";
+}
+
+// ------------------ LOVE (40) ------------------
+let loveQuotes = [
+"Your love is my favorite place to be.",
+"I didn’t believe in magic until I met you.",
+"You make my heart feel like it’s finally home.",
+"Every moment with you is a treasure.",
+"You’re the reason I smile without realizing.",
+"Loving you is the easiest thing I’ve ever done.",
+"In your eyes, I found my forever.",
+"You’re my today and all of my tomorrows.",
+"I fall for you a little more every day.",
+"You’re the part of my life I never want to lose.",
+"My heart beats differently when you’re near.",
+"I love the way you make me feel understood.",
+"You’re my safest place and my greatest adventure.",
+"Love is simple… it’s us.",
+"I didn’t choose you—my heart did.",
+"You make everything feel lighter.",
+"My world makes sense with you in it.",
+"You’re the calm after my storms.",
+"Being loved by you is a blessing.",
+"You make even silence feel beautiful.",
+"You’re the smile I never want to lose.",
+"No one compares to the way you make me feel.",
+"You feel like a dream I don’t want to wake up from.",
+"I want to love you in ways words can’t explain.",
+"You’re the only person my heart wants.",
+"There’s no place I’d rather be than with you.",
+"You’re the light that makes my darkness disappear.",
+"I want every moment of my life to include you.",
+"You’re more than love—you're peace.",
+"I love the way you understand my silence.",
+"Your love feels like home to me.",
+"I’m thankful for you every single day.",
+"You make my heart feel full.",
+"You’re the best part of everything.",
+"I’d choose you in every lifetime.",
+"My heart belongs to you and only you.",
+"With you, every moment feels right.",
+"You’re the love I prayed for.",
+"You’re the definition of perfect to me."
+];
+
+// ------------------ SAD (40) ------------------
+let sadQuotes = [
+"Sometimes tears say what words can’t.",
+"It hurts when the person you want the most becomes a memory.",
+"I’m trying, but some days are heavier than others.",
+"Smiling on the outside, breaking inside.",
+"It’s hard to heal when the wounds are still fresh.",
+"Not everything broken needs to be fixed—some things just hurt.",
+"Silence is my loudest cry.",
+"I miss the person I used to be before the pain.",
+"Some nights, sadness hits harder.",
+"I act like I don’t care, but trust me… I do.",
+"It hurts to care too much.",
+"Some scars never fade, they just stop hurting.",
+"I wish I could forget the things that hurt to remember.",
+"My heart is tired.",
+"It’s hard pretending I’m okay.",
+"Sometimes the strongest people are the ones hurting the most.",
+"I’m slowly losing pieces of myself.",
+"Some days, I feel everything. Other days, I feel nothing.",
+"I stopped explaining because nobody understood.",
+"I’m tired of trying.",
+"Even when surrounded by people, I feel alone.",
+"I break silently.",
+"I miss the old days when happiness was easy.",
+"It hurts when you realize nothing is the same anymore.",
+"My smile hides a thousand stories.",
+"I’m learning to live with the pain.",
+"I’m okay, just not today.",
+"Not all wounds are visible.",
+"I wish my heart had an off switch.",
+"Pain changes people.",
+"Sometimes all you can do is breathe and keep going.",
+"I trusted too much, that’s my problem.",
+"My heart feels heavier than my body.",
+"I’m tired of pretending to be strong.",
+"Why does everything hurt so much?",
+"Some memories make me smile… then break me.",
+"I hate that I still care.",
+"I'm exhausted—emotionally and mentally.",
+"Even the strong get tired of being strong."
+];
+
+// ------------------ BREAKUP (40) ------------------
+let breakQuotes = [
+"Letting go was hard, but staying was killing me.",
+"You didn’t lose me — you lost someone who truly cared.",
+"Sometimes the person you want the most is the person you’re better without.",
+"I’m healing, slowly but surely.",
+"Our story ended, but my life didn’t.",
+"I miss who I thought you were.",
+"Breakups hurt, but staying broken is a choice.",
+"You taught me a lesson, not love.",
+"I deserved better — and now I know it.",
+"Healing starts when you stop looking back.",
+"You can’t lose someone who was never yours.",
+"Love shouldn’t hurt more than it heals.",
+"I’m choosing myself this time.",
+"Some people come into your life as blessings, others as lessons.",
+"You walked away like it was easy.",
+"I let go because I finally learned to love myself.",
+"Sometimes goodbye is the only way to survive.",
+"You broke me, but I rebuilt myself stronger.",
+"Missing you doesn’t mean I need you.",
+"The hardest part was unloving someone who didn’t care.",
+"You left, but the memories stayed.",
+"Not every ending deserves sadness.",
+"I’m learning to love the silence you left.",
+"You lost someone who would’ve stayed forever.",
+"Your absence taught me my worth.",
+"Healing means accepting the truth, not the lie.",
+"I didn’t lose you—I found myself.",
+"I won’t let the same heart hurt me twice.",
+"Some doors must stay closed.",
+"I still care, but not enough to break myself again.",
+"You were a lesson in disguise.",
+"I stopped chasing what didn’t want to stay.",
+"I’m not angry anymore—just done.",
+"I outgrew the pain you caused.",
+"You made me cry, now watch me rise.",
+"One day you’ll realize what you lost.",
+"I no longer wait for what’s gone.",
+"I’m better without the chaos.",
+"I’m not looking back ever again."
+];
+
+// ------------------ WISDOM (40) ------------------
+let wisdomQuotes = [
+"Discipline will take you where motivation can’t.",
+"Your mindset is your superpower.",
+"Work in silence—let success make the noise.",
+"Not everything deserves your reaction.",
+"Growth is uncomfortable because you’ve never been here before.",
+"You don’t have to explain yourself to everyone.",
+"Your future depends on the habits you build today.",
+"Never fear starting over.",
+"Silence is better than unnecessary drama.",
+"Choose people who choose you.",
+"The smarter you get, the less you speak.",
+"Success starts with self-control.",
+"Protect your peace.",
+"Be better than yesterday.",
+"Let your actions speak louder than your words.",
+"Sometimes the best response is no response.",
+"Keep going—your future self will thank you.",
+"You attract what you are, not what you want.",
+"Your circle should motivate you, not drain you.",
+"Stay focused—your time is coming.",
+"Patience is power.",
+"Healing is also growth.",
+"Not everyone deserves access to you.",
+"Small steps are still progress.",
+"Mastering yourself is the greatest achievement.",
+"Be careful who you trust.",
+"You can’t change the past, but you can build the future.",
+"Consistency beats talent.",
+"Surround yourself with greatness.",
+"Don’t expect loyalty from people who can’t be loyal to themselves.",
+"Your energy introduces you ennen you speak.",
+"Invest in yourself first.",
+"The secret to success is learning every day.",
+"Control your emotions, not the world.",
+"You don’t need validation to know your worth.",
+"Think less about others, more about your goals.",
+"Big dreams require big discipline.",
+"Create the life you want.",
+"Stay humble, stay hungry.",
+"Focus on improving, not impressing."
+];
+
+// ------------------ Fill HTML ------------------
+document.getElementById("love").innerHTML = loveQuotes.join("<br><br>");
+document.getElementById("sad").innerHTML = sadQuotes.join("<br><br>");
+document.getElementById("break").innerHTML = breakQuotes.join("<br><br>");
+document.getElementById("wisdom").innerHTML = wisdomQuotes.join("<br><br>");
+</script>
+
+</body>
+</html>
